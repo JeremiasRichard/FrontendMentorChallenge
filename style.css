@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("/images/bg-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #674BB1;
+    padding: 50px; 
+
+}
+
+.header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tittle-sectorLogo{
+    display: flex;
+    padding: 5px;
+    align-items:flex-start;
+    margin: 5px;
+}
+
+
+.logoSector {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    color: white;
+    display: flex;
+    margin-left: 55px;
+}
+
+
+.image-title{
+   height: 100%;
+   width:100%;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+    padding: 25px;
+    margin: 5px;
+}
+
+.bg-desktop-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+    margin: 20px;
+}
+
+.bg-desktop-section .bg-desktop-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/illustration-mockups.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.text-section {
+    width: 40%;
+    display: inline-table;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 5px;
+}
+
+.text-section h1 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+    height: 50%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 6vh;
+    color: white;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.text-section .text-sector {
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.text-section .button {
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(72, 1, 72);
+    background-color: white;
+    font-size: 1.8vh;
+    width: 20vh;
+    height: 5.5vh;
+    border-radius: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.514); 
+}
+
+.text-section .button:hover {
+    background-color: #E980E7;
+    color: white;
+}
+
+.social-container {
+    height: 10vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+.social{
+    margin-top: 2px;
+    margin-right: 200px;
+    height: 50%;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;  
+}
+
+.icon {
+    display: flex;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    color: #E980E7;
+}
+
+
+/*------------ Mobile-Section ---------------*/
+
+@media (max-width:768px) {
+
+
+    .header {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .header-tittle {
+        height: 50%;
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /*---SECCION DE DESKTOP --*/
+
+    .bg-desktop-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+        padding: 5px 15px;
+    }
+
+    /*---SECCION DE TEXTO --*/
+    .text-section-container {
+        width: 100%;
+        height: 59.5vh;
+        padding: 20px;
+    }
+
+    .text-section {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .text-section h1 {
+        height: 20%;
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    body main .header-tittle h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        padding: 10px;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+    }
+
+    body main h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .text-section .text-sector {
+        color: white;
+        font-size: 18px;
+        height: 40vh;
+        text-align: center;
+    }
+
+    /*-----REDES SOCIALES-------*/
+
+    .social-container {
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 15PX
+    }
+
+}
