@@ -13,7 +13,7 @@ body {
     background-repeat: no-repeat;
     background-color: #674BB1;
     padding: 50px; 
-
+    border: 2px solid transparent;
 }
 
 .header{
@@ -21,13 +21,12 @@ body {
     height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .tittle-sectorLogo{
     display: flex;
     padding: 5px;
-    align-items:flex-start;
+    width: 100%;
     margin: 5px;
 }
 
@@ -48,9 +47,6 @@ body {
 }
 
 
-
-
-
 .container {
     display: flex;
     width: 100%;
@@ -61,7 +57,6 @@ body {
 
 .bg-desktop-section {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 50%;
     padding: 15px;
@@ -82,9 +77,8 @@ body {
     width: 40%;
     display: inline-table;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 5px;
+    padding: 25px;
+    margin: 10px;
 }
 
 .text-section h1 {
@@ -145,9 +139,9 @@ img {
     height: 50%;
     width: 10%;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
     align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
 
 .social-link {
@@ -172,105 +166,141 @@ img {
 
 @media (max-width:768px) {
 
-
-    .header {
-        width: 100%;
-        height: 15vh;
-        display: flex;
+    body {
+        display: block;
         align-items: center;
-        justify-content: flex-start;
+        align-content: center;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url("/images/bg-mobile.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-color: #674BB1;
+        padding: 1px;
+        height: 100%;
+        border: 2px solid transparent;
     }
 
-    .header-tittle {
-        height: 50%;
-        width: 50%;
+    .tittle-sectorLogo {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+        height: 100%;
+        border: 2px solid transparent;
+    }
+
+    .logoSector{
+        padding: 15px;
+        color: white;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        width: 45%;
+        height: 100%;
+        margin-top: 5px;
+        border: 2px solid transparent;
+        margin-left: 10px;
+    }
+
+    .image-title{
+        height: 100%;
+        width: 100%;
     }
 
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        padding: 10px;
+        margin: 0px;
+        border: 2px solid transparent;
     }
 
     /*---SECCION DE DESKTOP --*/
 
     .bg-desktop-section {
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 100%;
-        height: 40vh;
-        padding: 5px 15px;
+        height: 35vh;
+        margin: 0px;
+        border: 2px solid transparent;
     }
 
+
     /*---SECCION DE TEXTO --*/
-    .text-section-container {
-        width: 100%;
-        height: 59.5vh;
-        padding: 20px;
-    }
 
     .text-section {
         display: flex;
         align-items: center;
-        height: 100%;
-    }
-
-    .text-section h1 {
-        height: 20%;
         width: 100%;
-        margin-top: 5px;
+        padding: 20px;
+        margin: 0px;
+        border: 2px solid transparent;
+    }
+    
+    .text-section h1 {
+        font-family: 'Poppins', sans-serif;
         display: flex;
-        align-items: center;
-    }
-
-    body main .header-tittle h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        padding: 10px;
-        font-size: 35px;
-        color: white;
         text-align: center;
-    }
-
-    body main h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        padding: 10px;
-        font-size: 20px;
+        margin-top: 15px;
+        height: 20%;
+        width: 90%;
+        font-size: 3vh;
         color: white;
-        text-align: center;
+        padding: 10px;
+        border: 2px solid transparent;
     }
-
+    
     .text-section .text-sector {
         color: white;
-        font-size: 18px;
-        height: 40vh;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 2vh;
+        width: 89%;
+        height: 100%;
         text-align: center;
     }
 
+    .text-section .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        margin-top: 0px;
+        color: rgb(72, 1, 72);
+        background-color: white;
+        font-size: 1.8vh;
+        width: 26vh;
+        height: 5.5vh;
+        border-radius: 30px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.225); 
+    }
+    
     /*-----REDES SOCIALES-------*/
-
     .social-container {
-        height: 15vh;
+        display:flex;
+        align-items: center;
+        align-content: center;
+        height: 10vh;
         width: 100%;
+        border: 2px solid transparent;
+    }
+    
+    .social{
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
-
-    .social {
-        width: 50%;
+        align-content: center;
         height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        gap: 15PX
+        width: 40%;
+        margin-right: 105px;
+        border: 2px solid transparent;
     }
-
+    
+    .icon
+    {
+        width: 25px;
+        height: 25px;
+        border: 2px solid transparent;
+    }
 }
